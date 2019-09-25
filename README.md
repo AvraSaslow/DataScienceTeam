@@ -2,9 +2,11 @@
 Data Science Team Project
 
 Avra Saslow
+
 Beni Bienz
 
 Summary:
+
 Data science in soccer is a relatively new field of study compared with other sports, as the sparsity of scoring events and 
 lack of explicit numerical data has prevented researchers from developing techniques that can be usefully leveraged. However, 
 in recent years, the common perception that nothing can be learned from the data is changing, as more complex systems for 
@@ -14,6 +16,7 @@ research team, culminating in this year’s Champions League win. Nevertheless, 
 Wild West phase compared with other sports, which makes us keen to explore it!
 
 Data and Techniques:
+
 We came across two datasets of interest. The first is a comprehensive database of matches and player information, including 
 match results, player attributes and betting odds for the top European leagues from 2008 - 2016. The second consists of event 
 stream data, which is a numerical timeline of player actions, goals and other notable events during a game. Using these 
@@ -24,6 +27,7 @@ find interesting. We will then seek to add features to the input data, which we 
 about tactics, player habits, formations, etc.
 
 Goals:
+
 Bookies (the people that set the odds) successfully predict game outcome 53% of the time -  we’d like to equal or beat 
 this number. We are also excited about discovering soccer insights that go beyond the statistics which are traditionally 
 reported (possession, shots on target, pass accuracy etc.). We both hope to learn more about the strengths and weaknesses of 
