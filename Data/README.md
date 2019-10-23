@@ -1,4 +1,4 @@
-Note: git has some trouble with the European soccer database.
+Note: git has some trouble with the European soccer database due to it being larger than the 100 Mb push limit.
 
 For now, we will not include it in the repo, but a local copy is needed for the
 analysis code to run. To get it, download it from here:
