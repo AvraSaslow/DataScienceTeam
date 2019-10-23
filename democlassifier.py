@@ -34,8 +34,9 @@ def plot_confusion_matrix(cm, fig, ax, classes,
                  color="white" if cm[i, j] > thresh else "black")
     ax.set_ylabel('True label')
     ax.set_xlabel('Predicted label')
+    ax.invert_yaxis()
 
-conn = sql.connect('soccer_database.sqlite')
+conn = sql.connect('database.sqlite')
 
 # query = 'SELECT * FROM Match INNER JOIN League on League.id = Match.league_id'
 
@@ -77,9 +78,9 @@ training_results = RF.predict(X_train)
 Y = training_results
 T = T_train
 cm = confusion_matrix(y_true=T, y_pred=Y)
-fig, ax = plt.subplots(1)
-plot_confusion_matrix(cm, fig, ax, ['miss', 'hit'])
-plt.show()
+fig, (ax1, ax2) = plt.subplots(1, 2)
+ax1.set_title('Train results')
+plot_confusion_matrix(cm, fig, ax1, ['loss', 'win'])
 
 # TEST
 X_test = test_df.loc[:, FEATURES]
@@ -90,6 +91,7 @@ testing_results = RF.predict(X_test)
 Y = testing_results
 T = T_test
 cm = confusion_matrix(y_true=T, y_pred=Y)
-fig, ax = plt.subplots(1)
-plot_confusion_matrix(cm, fig, ax, ['miss', 'hit'])
+plot_confusion_matrix(cm, fig, ax2, ['loss', 'win'])
+ax2.set_title('Test results')
+plt.tight_layout()
 plt.show()
