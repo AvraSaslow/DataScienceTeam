@@ -36,7 +36,7 @@ def plot_confusion_matrix(cm, fig, ax, classes,
     ax.set_xlabel('Predicted label')
     ax.invert_yaxis()
 
-conn = sql.connect('database.sqlite')
+conn = sql.connect('Data/database.sqlite')
 
 # query = 'SELECT * FROM Match INNER JOIN League on League.id = Match.league_id'
 
