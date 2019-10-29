@@ -7,7 +7,7 @@ Our project is centred around predicting the outcome of soccer matches. In our f
 Our goal for this milestone was to complete an end-to-end data pipeline, from raw input to visualization of classification output. We first spent some time familiarizing ourselves with the data, using Python’s SQLite library to query the “ultimate” database and construct pandas dataframes of selected match data. We then decided on a subset of data to use for the purposes of building the pipeline: English Premier League matches that didn’t end in a tie (allowing for binary classification). For our demo input features, we used betting odds for home team wins from several betting shops, the idea being that each set of odds represented a compressed feature set chosen by the company. We shuffled the data and split them into train and test sets, then trained a random forest classifier using sklearn. Finally, we wrote a confusion matrix function to visualize the train and test results (fig 1).
 
 
-![alt text](confusionMatrix.png "Title")
+![alt text](https://user-images.githubusercontent.com/32274816/67785797-6c5fbb00-fa33-11e9-83eb-53475bd46e01.png "Title")
 
 *Fig 1: Example output of classifier visualized as confusion matrices. This particular run shows the train and test results of a random forest classifier trained on English Premier League games that didn’t end in ties, using home team win betting odds from various betting shops as input features.*
 
