@@ -97,4 +97,9 @@ epl[['possession_home_team', 'possession_away_team']] = epl[
 epl = epl.drop(columns=['home_team_api_id', 'away_team_api_id', 'match_api_id', 'corner', 'possession', 'cross', 'card', 'foulcommit', 'shoton', 'shotoff', 'goal'])
 print(epl.tail())
 
+for col in epl.columns:
+    if col.endswith('_home_team') and not col.startswith('possession'):
+        epl[col[:-10]] = epl[col] + epl[col[:-10] + '_away_team']
+
+print(epl.tail())
 epl.to_csv('Data/EPL.csv')

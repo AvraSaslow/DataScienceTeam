@@ -7,14 +7,12 @@ pd.options.display.expand_frame_repr = False
 EPL = pd.read_csv('Data/EPL.csv')
 
 
-def plot_attributes_over_seasons(attributes_to_plot=None):
+def plot_attributes_over_seasons(attributes_to_plot):
     """
     Plots mean and std of given attributes over all recorded seasons of the EPL
     Args:
         attributes_to_plot: list of attributes to plot (e.g. ['home_team_goal', 'away_team_goal'])
     """
-    if attributes_to_plot is None:
-        attributes_to_plot = []
     seasons = EPL['season'].unique()
 
     mean_vals, sd_vals = defaultdict(list), defaultdict(list)
