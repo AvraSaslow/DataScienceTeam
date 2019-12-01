@@ -1,5 +1,6 @@
+""" Code for extracting EPL data from the SQLite DB and parsing xml fields """
+
 import pandas as pd
-import numpy as np
 import sqlite3 as sql
 import xml.etree.ElementTree as ET
 
