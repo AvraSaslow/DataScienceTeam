@@ -13,4 +13,3 @@ We plan to explore this data by utilizing a range of classifiers such as `SVMs`,
 
 **Goals:**
 Bookies (the people that set the odds) successfully predict game outcome 53% of the time -  we’d like to equal or beat this number. We are also excited about discovering soccer insights that go beyond the statistics which are traditionally reported (possession, shots on target, pass accuracy etc.). We both hope to learn more about the strengths and weaknesses of different classifiers, and get some decent practice querying a large dataset using `SQLite`.
-

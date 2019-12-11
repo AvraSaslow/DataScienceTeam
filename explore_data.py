@@ -62,7 +62,7 @@ if __name__ == '__main__':
     print(EPL.columns)
     print(EPL['home_team'].unique())
     plot_attributes_over_seasons(
-        attributes_to_plot=['goal', 'on_target_shot', 'off_target_shot'],
-        team='Manchester United',
+        attributes_to_plot=['on_target_shot_home_team', 'on_target_shot_away_team', 'foul_home_team', 'foul_away_team', 'possession_home_team', 'possession_away_team'],
+        team=None,
         relative=False
     )
